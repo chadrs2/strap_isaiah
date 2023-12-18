@@ -352,9 +352,13 @@ def evaluate(args, gpt2_model, tokenizer, prefix=""):
     return result
 
 
-def main():
+def 1main():
+    print("MADE IT")
     parser = get_parser("finetuning")
+    print("parser:",parser,parser.parse_args())
+    print("????")
     args = parser.parse_args()
+    print("for the love")
 
     if (os.path.exists(args.output_dir) and os.listdir(args.output_dir) and args.do_train and not args.overwrite_output_dir):
         raise ValueError("Output directory ({}) already exists and is not empty. Use --overwrite_output_dir to overcome.".format(args.output_dir))
@@ -500,7 +504,7 @@ def main():
                 logger.info("Sleeping for {:d} minutes...zzzz...".format(args.eval_frequency_min))
                 time.sleep(args.eval_frequency_min * 60)
 
-        return all_results
+    return all_results
 
 
 if __name__ == "__main__":

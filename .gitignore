@@ -2,6 +2,9 @@
 __pycache__/
 *.py[cod]
 
+# Large model files
+*.bin
+
 # C extensions
 *.so
 
@@ -53,7 +56,7 @@ style-venv
 
 .vscode
 runs/
-datasets/
+#datasets/
 
 outputs/formality_backup
 outputs/baselines/dlsm_formality

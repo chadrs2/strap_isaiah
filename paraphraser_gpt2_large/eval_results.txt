@@ -1,0 +1,3 @@
+accuracy = 0.0000, (0 / 373)
+accuracy_tokens = 0.0000, (0 / 94)
+perplexity = tensor(4.9572)

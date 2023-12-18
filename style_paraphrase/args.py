@@ -1,6 +1,5 @@
 import argparse
 
-
 def get_parser(parser_type, model_classes=None, all_models=None):
     parser = argparse.ArgumentParser()
 
@@ -10,11 +9,9 @@ def get_parser(parser_type, model_classes=None, all_models=None):
 
     parser.add_argument('--extra_embedding_dim', type=int, default=768,
                         help="Size of linear layer used for projecting extra embeddings.")
-
     parser.add_argument("--no_cuda", action='store_true',
                         help="Avoid using CUDA when available")
-
-    parser.add_argument("--local_rank", type=int, default=-1,
+    parser.add_argument("--local-rank", type=int, default=-1,
                         help="For distributed training: local_rank")
     parser.add_argument('--seed', type=int, default=42,
                         help="random seed for initialization")
