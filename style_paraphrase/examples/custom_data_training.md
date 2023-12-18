@@ -148,10 +148,5 @@ python3 -m torch.distributed.launch --nproc_per_node=1 $BASE_DIR/run_lm_finetuni
 
 1. Clean Isaiah context from church website (https://www.churchofjesuschrist.org/study/manual/old-testament-student-manual-kings-malachi/enrichment-e?lang=eng)
 
-2. Style transfer english into Isaiah's writing style
-
-```
-python3 style_paraphrase/evaluation/scripts/style_transfer.py --input_file=datasets/isaiah_context_eng/isaiah_context_eng_cleaned.txt --output_file=isaiah_context_isaiah.txt --paraphrase_model=paraphraser_gpt2_large --style_transfer_model=style_paraphrase/saved_models/model_custom_isaiah/checkpoint-357 --detokenize --post_detokenize --top_p=0.0
-```
-3. Fine-tune train Paraphraser model with this new Isaiah text (see steps above)
-4. (Poss) build an Inverse Paraphraser model to contextualize Isaiah into modern day English
+2. Fine-tune train Paraphraser model with this new Isaiah context (see steps above)
+3. Build an Inverse Paraphraser model by fine-tune training the English_1990 model with this new Isaiah context and improved Paraphraser model into modern day English
