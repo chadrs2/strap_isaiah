@@ -41,7 +41,8 @@ DATASET_CONFIG = {
     "datasets/coha_3_bins_1990s-2000s": BASE_CONFIG,
     "datasets/isaiah": BASE_CONFIG,
     "datasets/bom": BASE_CONFIG,
-    "datasets/english_1990": BASE_CONFIG
+    "datasets/english_1990": BASE_CONFIG,
+    "datasets/isaiah_context_eng": BASE_CONFIG
 }
 
 # Fill in DATASET_CONFIG with keys it was missing previously

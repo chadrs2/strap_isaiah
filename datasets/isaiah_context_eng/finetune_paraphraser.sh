@@ -35,5 +35,5 @@ python3 -m torch.distributed.launch --nproc_per_node=1 $BASE_DIR/run_lm_finetuni
     --prefix_input_type original \
     --global_dense_feature_list none \
     --specific_style_train -1 \
-    --optimizer adam
-
+    --optimizer adam \
+    --overwrite_output_dir
