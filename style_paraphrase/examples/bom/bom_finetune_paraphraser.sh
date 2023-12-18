@@ -11,7 +11,7 @@
 # Experiment Details :- GPT2-large model for paraphrasing.
 # Run Details :- accumulation = 2, batch_size = 5, beam_size = 1, cpus = 3, dataset = datasets/paranmt_filtered, eval_batch_size = 1, global_dense_feature_list = none, gpu = m40, learning_rate = 5e-5, memory = 50, model_name = gpt2-large, ngpus = 1, num_epochs = 3, optimizer = adam, prefix_input_type = original, save_steps = 500, save_total_limit = -1, specific_style_train = -1, stop_token = eos
 
-export DATA_DIR=datasets/bom #paranmt_filtered
+export DATA_DIR=datasets/custom_bom_finetuned_paraphraser #paranmt_filtered
 
 # source style-venv/bin/activate
 
