@@ -1,0 +1,15 @@
+East wind = a hot, destructive wind from the desert.
+groves = goddess
+bittern = hedgehog
+besom = broom
+Ephraim = Israel
+Damascus = capital of Syria
+Rezin = king of Damascus
+Pekah = king of Israel
+Son of Remaliah = Pekah
+Samaria = capital of Israel
+Judah = Son of David
+Jerusalem = capital of Judah
+Israel = northern kingdom
+Judah = southern kingdom
+Ahaz = king of Judah
