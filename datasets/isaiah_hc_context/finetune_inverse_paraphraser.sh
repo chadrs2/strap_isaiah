@@ -13,7 +13,7 @@ export DATA_DIR=datasets/isaiah_hc_context
 
 BASE_DIR=style_paraphrase
 
-# Trains the InverseParaphraser and saves to 'model_custom_bom'
+# Trains the InverseParaphraser and saves to 'model_custom_isaiah_hc_context'
 python3 -m torch.distributed.launch --nproc_per_node=1 $BASE_DIR/run_lm_finetuning.py \
     --output_dir=$BASE_DIR/saved_models/model_custom_isaiah_hc_context \
     --model_type=gpt2 \
